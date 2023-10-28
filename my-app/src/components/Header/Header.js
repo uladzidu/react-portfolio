@@ -1,11 +1,12 @@
 import React from "react";
-import style from './Header.scss'
+import style from '../../App.module.scss'
+import omnifoodLogo from "../../img/omnifood-project.jpg"
 
 export const Header = () => {
     return (
         <header className={style.header}>
             <a href="#">
-                <img src="../../../img/omnifood-project.jpg" alt="Omnifood logo" className="logo"/>
+                <img src={omnifoodLogo} alt="Omnifood logo" className={style.logo}/>
             </a>
             <nav className="main-nav">
                 <ul className="main-nav-list">
