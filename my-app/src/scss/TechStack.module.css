@@ -1,0 +1,54 @@
+.galleryItem {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.galleryItem img {
+  display: block;
+  width: 50%;
+  transition: all 0.4s;
+  height: 50%;
+}
+.galleryItem figcaption {
+  text-transform: uppercase;
+}
+.galleryItem img:hover {
+  transform: scale(1.1);
+}
+
+.sectionTechStack {
+  background-color: #050b07;
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+  align-items: center;
+  padding-bottom: 2.4rem;
+}
+
+.testimonials-container {
+  padding: 9.6rem;
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 4.8rem;
+  column-gap: 8rem;
+}
+
+.testimonial-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 1.6rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+  padding: 1.6rem;
+}
+
+/*# sourceMappingURL=TechStack.module.css.map */

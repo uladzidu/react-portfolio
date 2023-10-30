@@ -1,6 +1,7 @@
 import React from "react";
 import style from '../../App.module.scss'
 import omnifoodLogo from "../../img/omnifood-project.jpg"
+import {Introduction} from "../Main/Sections/How/Introduction";
 
 export const Header = () => {
     return (
@@ -9,16 +10,16 @@ export const Header = () => {
                 <img src={omnifoodLogo} alt="Omnifood logo" className={style.logo}/>
             </a>
             <nav className="main-nav">
-                <ul className="main-nav-list">
-                    <li><a className="main-nav-link" href="#how">Personal info</a></li>
-                    <li><a className="main-nav-link" href="#testimonials">Tech Stack</a></li>
-                    <li><a className="main-nav-link" href="#meals">Projects</a></li>
-                    <li><a className="main-nav-link nav-cta" href="#cta">Contact me</a></li>
+                <ul className={style.mainNavList}>
+                    <li><a className={style.mainNavLink} href="#introduction">Personal info</a></li>
+                    <li><a className={style.mainNavLink} href="#testimonials">Tech Stack</a></li>
+                    <li><a className={style.mainNavLink} href="#meals">Projects</a></li>
+                    <li><a className={`${style.mainNavLink} ${style.navCta}`} href="#cta">Contact me</a></li>
                 </ul>
             </nav>
-            <button className="btn-mobile-nav">
-                <ion-icon className="icon-mob-nav" name="menu-outline"></ion-icon>
-                <ion-icon className="icon-mob-nav" name="close-outline"></ion-icon>
+            <button className={style.btnMobileNav}>
+                <ion-icon className={style.iconMobNav} name="menu-outline"></ion-icon>
+                <ion-icon className={style.iconMobNav} name="close-outline"></ion-icon>
             </button>
         </header>
     )

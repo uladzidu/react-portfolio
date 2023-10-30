@@ -1,4 +1,171 @@
 @import "./scss/Hero.module";
 @import "./scss/Button.module";
 @import "./scss/Header.module";
+@import "./scss/Introduction.module";
+@import './scss/TechStack.module';
 
+//------------RESET DEFAULT STYLES-----------//
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /*font-size: 10px; */
+
+  /* 10px / 16px(default browser font-size setting) = 0.625 = 62.5% */
+  /*Percentage of user's browser font-size setting*/
+
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #fff;
+
+
+  overflow-x: hidden;
+}
+
+//-----------------HEADINGS-------------//
+
+.headingPrimary,
+.headingSecondary,
+.headingTertiary {
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -0.5px;
+  border-top: 1px solid grey;
+  padding-top: 3rem;
+}
+
+.headingPrimary {
+  font-size: 7.2rem;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+}
+
+.headingSecondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 7.6rem;
+}
+
+.headingTertiary {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}
+
+.subheading {
+  display: block;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #e67e22;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+
+}
+
+.mainNavList {
+  display: flex;
+  align-items: center;
+  gap: 4.8rem;
+  list-style: none;
+}
+
+.mainNavLink {
+  &:link, &:visited {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.8rem;
+    transition: all 0.3s;
+    display: inline-block;
+  }
+
+  &:hover, &:active {
+    color: #D2DCFF;
+  }
+}
+
+
+.mainNavLink.navCta {
+  &:link, &:visited {
+    padding: 1.2rem 2.4rem;
+    border-radius: 9px;
+    color: #fff;
+    background-color: #303538;
+  }
+
+  &:hover, &:active {
+    background-color: #D2DCFF;
+    color: #303538;
+  }
+
+}
+
+//------------------GRIDS AND CONTAINER---------------------
+
+.container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  row-gap: 6.4rem;
+  column-gap: 9.6rem;
+
+  &:not(:last-child) {
+    margin-bottom: 9.6rem;
+  }
+}
+
+
+.grid2Cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid3Cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid4Cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid5Cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.gridCenterV {
+  align-items: center;
+}
+
+/**************************/
+/* HELPER/SETTINGS CLASSES */
+/**************************/
+
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
+
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
+}
+
+.center-text {
+  text-align: center;
+}
+
+strong {
+  font-weight: 500;
+}

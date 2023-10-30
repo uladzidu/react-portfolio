@@ -36,7 +36,6 @@
   }
 
   &:hover, &:active {
-    /*background-color: #fdf2e9;*/
     /* Trick to add border inside element using box-shadow */
     box-shadow: 0 0 0 3px #fff;
     background-color: #D2DCFF;
@@ -55,3 +54,26 @@
     color: #555;
   }
 }
+
+/* MOBILE */
+
+.btnMobileNav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.iconMobNav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+
+  &[name="close-outline"] {
+    display: none;
+  }
+
+}
+
+
