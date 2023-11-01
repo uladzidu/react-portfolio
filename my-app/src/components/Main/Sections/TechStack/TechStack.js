@@ -3,7 +3,7 @@ import {Tech} from "./Tech";
 import style from "../../../../App.module.scss"
 import html5 from '../../../../img/gallery/html-1.svg'
 import css3 from '../../../../img/gallery/css-3.svg'
-import js from '../../../../img/gallery/javascript-1.svg'
+import js from '../../../../img/gallery/logo-javascript.svg'
 import react from '../../../../img/gallery/react-2.svg'
 import redux from '../../../../img/gallery/redux.svg'
 import ts from '../../../../img/gallery/typescript-2.svg'
