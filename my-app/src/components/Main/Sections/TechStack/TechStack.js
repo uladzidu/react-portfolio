@@ -11,7 +11,7 @@ import mui from '../../../../img/gallery/material-ui-1.svg'
 import git from '../../../../img/gallery/git-logo.png'
 import postman from '../../../../img/gallery/postman.svg'
 import sass from '../../../../img/gallery/sass-1.svg'
-
+import {Step} from "./Step";
 
 export const TechStack = () => {
     return (
@@ -20,45 +20,17 @@ export const TechStack = () => {
             <div className={style.techStackContainer}>
                 <h2 className={style.headingSecondary}>Stack of technologies</h2>
                 <div className={style.technologies}>
-                    <figure>
-                        <p>01</p>
-                        <div className={style.techText}>
-                            I graduated from a prestigious Belarusian tech university.
-                            After completing my formal education, I recognized the importance of staying up-to-date with the
-                            latest advancements in the tech industry.
-                        </div>
-                    </figure>
-                    <figure>
-                        <p>02</p>
-                        <div className={style.techText}>
-                            Eager to deepen my knowledge of JavaScript and frontend technologies, I embarked on a nine-month
-                            intensive course focused on mastering the intricacies of the language.
-                        </div>
-                    </figure>
-                    <figure>
-                        <p>03</p>
-                        <div className={style.techText}>
-                            Throughout this comprehensive program, I delved into the core concepts of JavaScript, exploring
-                            its advanced functionalities and best practices.
-                            The highlight of this course was the hands-on experience gained by working on real-world
-                            projects.
-                        </div>
-                    </figure>
-                    <figure>
-                        <p>04</p>
-                        <div className={style.techText}>
-                            I had the chance to immerse myself in the world of React and Redux, building dynamic and
-                            interactive user interfaces. These projects allowed me to refine my skills in creating
-                            responsive web applications while harnessing the power of state management with Redux.
-                        </div>
-                    </figure>
+                    <Step number={'01'}
+                          text={'I graduated from a prestigious Belarusian tech university. After completing my formal education, I recognized the importance of staying up-to-date with the latest advancements in the tech industry.'}/>
+                    <Step number={'02'}
+                          text={'Eager to deepen my knowledge of JavaScript and frontend technologies, I embarked on a nine-month intensive course focused on mastering the intricacies of the language.'}/>
+                    <Step number={'03'}
+                          text={'Throughout this comprehensive program, I delved into the core concepts of JavaScript, exploring its advanced functionalities and best practices. The highlight of this course was the hands-on experience gained by working on real-world projects.'}/>
+                    <Step number={'04'}
+                          text={'I had the chance to immerse myself in the world of React and Redux, building dynamic and interactive user interfaces. These projects allowed me to refine my skills in creating responsive web applications while harnessing the power of state management with Redux.'}/>
                 </div>
             </div>
             <div className={style.gallery}>
-                {/*<figure className={style.galleryItem}>*/}
-                {/*    <img src="img/gallery/html-1.svg" alt="Photo of beautifully arranged food"/>*/}
-                {/*        <figcaption>html 5</figcaption>*/}
-                {/*</figure>*/}
                 <Tech name={'html 5'} img={html5}/>
                 <Tech name={'css 3'} img={css3}/>
                 <Tech name={'js'} img={js}/>

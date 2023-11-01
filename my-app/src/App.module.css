@@ -200,6 +200,13 @@
   column-gap: 8rem;
 }
 
+.stepNumber {
+  font-size: 8.6rem;
+  font-weight: 600;
+  color: #ddd;
+  margin-bottom: 1.2rem;
+}
+
 .techText {
   font-size: 1.8rem;
   line-height: 1.8;
