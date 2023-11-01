@@ -1,7 +1,6 @@
 import React from "react";
 import style from '../../App.module.scss'
 import omnifoodLogo from "../../img/omnifood-project.jpg"
-import {Introduction} from "../Main/Sections/How/Introduction";
 
 export const Header = () => {
     return (

@@ -1,7 +1,16 @@
 import React from 'react';
 import {Tech} from "./Tech";
 import style from "../../../../App.module.scss"
-import img1 from '../../../../img/gallery/html-1.svg'
+import html5 from '../../../../img/gallery/html-1.svg'
+import css3 from '../../../../img/gallery/css-3.svg'
+import js from '../../../../img/gallery/javascript-1.svg'
+import react from '../../../../img/gallery/react-2.svg'
+import redux from '../../../../img/gallery/redux.svg'
+import ts from '../../../../img/gallery/typescript-2.svg'
+import mui from '../../../../img/gallery/material-ui-1.svg'
+import git from '../../../../img/gallery/git-logo.png'
+import postman from '../../../../img/gallery/postman.svg'
+import sass from '../../../../img/gallery/sass-1.svg'
 
 
 export const TechStack = () => {
@@ -45,51 +54,21 @@ export const TechStack = () => {
                     </figure>
                 </div>
             </div>
-            <div className={style.galery}>
-                <figure class="gallery-item">
-                    <img src="img/gallery/html-1.svg" alt="Photo of beautifully arranged food"/>
-                        <figcaption>html 5</figcaption>
-                </figure>
-                <Tech name={'html 5'} img={img1}/>
-                {/*<figure class="gallery-item">*/}
-                {/*    <img src="img/gallery/css-3.svg" alt="Photo of beautifully arranged food"/>*/}
-                {/*        <figcaption>css 3</figcaption>*/}
+            <div className={style.gallery}>
+                {/*<figure className={style.galleryItem}>*/}
+                {/*    <img src="img/gallery/html-1.svg" alt="Photo of beautifully arranged food"/>*/}
+                {/*        <figcaption>html 5</figcaption>*/}
                 {/*</figure>*/}
-                {/*<figure class="gallery-item">*/}
-                {/*    <img src="img/gallery/logo-javascript.svg" alt="Photo of beautifully arranged food"/>*/}
-                {/*        <figcaption>js</figcaption>*/}
-                {/*</figure>*/}
-                {/*<figure class="gallery-item">*/}
-                {/*    <img src="img/gallery/react-2.svg" alt="Photo of beautifully arranged food">*/}
-                {/*        <figcaption>react</figcaption>*/}
-                {/*</figure>*/}
-                {/*<figure class="gallery-item">*/}
-                {/*    <img src="img/gallery/redux.svg" alt="Photo of beautifully arranged food">*/}
-                {/*        <figcaption>redux</figcaption>*/}
-                {/*</figure>*/}
-                {/*<figure class="gallery-item">*/}
-                {/*    <img src="img/gallery/typescript-2.svg" alt="Photo of beautifully arranged food">*/}
-                {/*        <figcaption>ts</figcaption>*/}
-                {/*</figure>*/}
-                {/*<figure class="gallery-item">*/}
-                {/*    <img src="img/gallery/material-ui-1.svg" alt="Photo of beautifully arranged food">*/}
-                {/*        <figcaption>mui</figcaption>*/}
-                {/*</figure>*/}
-                {/*<figure class="gallery-item">*/}
-                {/*    <img src="img/gallery/git-logo.png" alt="Photo of beautifully arranged food">*/}
-                {/*        <figcaption>git</figcaption>*/}
-                {/*</figure>*/}
-                {/*<figure class="gallery-item">*/}
-                {/*    <img src="img/gallery/postman.svg" alt="Photo of beautifully arranged food">*/}
-                {/*        <figcaption>postman</figcaption>*/}
-                {/*</figure>*/}
-
-
-                {/*<figure class="gallery-item">*/}
-                {/*    <img src="img/gallery/sass-1.svg" alt="Photo of beautifully arranged food">*/}
-                {/*        <figcaption>sass</figcaption>*/}
-                {/*</figure>*/}
-
+                <Tech name={'html 5'} img={html5}/>
+                <Tech name={'css 3'} img={css3}/>
+                <Tech name={'js'} img={js}/>
+                <Tech name={'react'} img={react}/>
+                <Tech name={'redux'} img={redux}/>
+                <Tech name={'ts'} img={ts}/>
+                <Tech name={'mui'} img={mui}/>
+                <Tech name={'git'} img={git}/>
+                <Tech name={'postman'} img={postman}/>
+                <Tech name={'sass'} img={sass}/>
             </div>
         </section>
     );

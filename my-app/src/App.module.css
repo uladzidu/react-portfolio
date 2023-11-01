@@ -213,6 +213,27 @@
   padding: 1.6rem;
 }
 
+.galleryItem {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.galleryItem img {
+  display: block;
+  width: 50%;
+  transition: all 0.4s;
+  height: 50%;
+}
+.galleryItem figcaption {
+  text-transform: uppercase;
+}
+.galleryItem img:hover {
+  transform: scale(1.1);
+}
+
 * {
   margin: 0;
   padding: 0;
