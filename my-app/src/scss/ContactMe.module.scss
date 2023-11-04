@@ -1,0 +1,77 @@
+.sectionContactMe {
+  padding: 4.8rem 0 12.8rem 0;
+  background-color: #050b07;
+}
+
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-color: rgba(31, 33, 38, 0.15);
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.015);
+  border-radius: 11px;
+  /*overflow: hidden;*/
+
+  background-image: linear-gradient(to right bottom, #8f7e6a, rgba(234, 234, 221, 0.3));
+  /*height: 50rem;*/
+
+  .ctaTextBox {
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+    color: #151616;
+
+    .ctaText {
+      font-size: 1.8rem;
+      line-height: 1.8;
+      margin-bottom: 4.8rem;
+    }
+
+    .ctaForm {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 3.2rem;
+      row-gap: 2.4rem;
+
+      label {
+        display: block;
+        font-size: 1.6rem;
+        font-weight: 500;
+        margin-bottom: 1.2rem;
+      }
+
+      input {
+        width: 100%;
+        padding: 1.2rem;
+        font-size: 1.8rem;
+        font-family: inherit;
+        color: inherit;
+        border: none;
+        background-color: #fdf2e9;
+        border-radius: 9px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+
+        &::placeholder {
+          color: #aaa;
+        }
+      }
+
+
+    }
+  }
+
+  .ctaImgBox {
+    background-image: linear-gradient(
+                    to right bottom,
+                    rgba(238, 215, 195, 0.01),
+                    rgba(227, 186, 151, 0.1)
+    ),
+    url("https://images.unsplash.com/photo-1562907550-096d3bf9b25c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjJ8fGNvZGV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60");
+    background-size: auto;
+    background-position: center;
+  }
+}
+
+.cta *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
+}
+
+

@@ -1,30 +1,34 @@
 import React from 'react';
 import s from '../../../../App.module.scss'
 
-export const Project = ({name, href, img}) => {
+export const Project = (
+    {
+        name, href, img, feature1, feature2, feature3, feature4, iName1, iName2, iName3, iName4
+    }
+) => {
     return (
         <div>
             <a href={href} target="_blank" className={`${s.project} ${s.projectLink}`}>
-                <img src={img} className={s.projectImg} alt={`${name}ImgAlt`}/>
+                <img src={img} alt={`${name}ImgAlt`}/>
                 <div className={s.projectContent}>
                     <p className={s.projectTitle}>{name}</p>
                     <div className={s.projectTags}>
                         <ul className={s.projectAttributes}>
                             <li>
-                                <ion-icon className={s.projectIcon} name="log-in-outline"></ion-icon>
-                                <span><strong>Sign Up or Log In</strong></span>
+                                <ion-icon name={iName1}></ion-icon>
+                                <span><strong>{feature1}</strong></span>
                             </li>
                             <li>
-                                <ion-icon className={s.projectIcon} name="location-outline"></ion-icon>
-                                <span><strong>Enter Your Location</strong></span>
+                                <ion-icon name={iName2}></ion-icon>
+                                <span><strong>{feature2}</strong></span>
                             </li>
                             <li>
-                                <ion-icon className={s.projectIcon} name="fast-food-outline"></ion-icon>
-                                <span><strong>Customize Order</strong></span>
+                                <ion-icon name={iName3}></ion-icon>
+                                <span><strong>{feature3}</strong></span>
                             </li>
                             <li>
-                                <ion-icon className={s.projectIcon} name="wallet-outline"></ion-icon>
-                                <span><strong>Complete Payment</strong></span>
+                                <ion-icon name={iName4}></ion-icon>
+                                <span><strong>{feature4}</strong></span>
                             </li>
                         </ul>
                     </div>

@@ -16,6 +16,7 @@
   overflow: hidden;
   transition: all 0.4s;
   display: block;
+  height: 100%;
 
   &:hover {
     transform: translateY(-1.2rem);
@@ -24,7 +25,7 @@
 
   img {
     width: 80%;
-    height: 35%;
+    height: 40%;
     border-radius: 1rem;
   }
 
@@ -57,7 +58,7 @@
         align-items: center;
         gap: 1.6rem;
 
-        .projectIcon {
+        ion-icon {
           height: 2.4rem;
           width: 2.4rem;
           color: #e67e22;
@@ -68,5 +69,4 @@
   }
 
 }
-
 
