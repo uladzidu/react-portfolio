@@ -19,13 +19,20 @@
   width: 100%;
 }
 
-.btn:link, .btn:visited {
+.btn, :link, :visited {
   text-decoration: none;
   font-size: 2rem;
   font-weight: 600;
   padding: 1.6rem 3.2rem;
   border-radius: 9px;
   transition: all 0.3s;
+}
+
+.btn {
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  display: inline-block;
 }
 
 .btnFull:link, .btnFull:visited {
@@ -358,6 +365,68 @@
 .cta *:focus {
   outline: none;
   box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
+}
+
+.sectionFooter {
+  padding: 9.8rem 0;
+  border-top: 1px solid #eee;
+  background-color: #050b07;
+}
+.sectionFooter .gridFooter {
+  grid-template-columns: 1fr 1fr;
+}
+.sectionFooter .footerHeading {
+  font-size: 2.8rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+.sectionFooter .contacts {
+  font-style: normal;
+  font-size: 1.8rem;
+  line-height: 1.6;
+}
+.sectionFooter .contacts .address {
+  margin-bottom: 1.4rem;
+}
+
+.footerLink, :link, :visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #767676;
+  transition: all 0.3s;
+  margin-bottom: 2.4rem;
+  display: inline-block;
+}
+.footerLink:hover, .footerLink :active, :link:hover, :link :active, :visited:hover, :visited :active {
+  color: #555;
+}
+
+.logoCol {
+  display: flex;
+  flex-direction: column;
+}
+.logoCol .footerHeading {
+  font-size: 2.8rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+.logoCol .socialLinks {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+  align-items: center;
+}
+.logoCol .copyright {
+  font-size: 1.4rem;
+  color: #767676;
+  line-height: 2.4rem;
+  margin-top: 5rem;
+}
+
+.socialIcon {
+  height: 2.4rem;
+  width: 2.4rem;
+  border: 1px solid red;
 }
 
 * {

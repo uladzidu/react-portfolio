@@ -1,14 +1,21 @@
 
-.btn {
-  &:link, &:visited {
-    text-decoration: none;
-    font-size: 2rem;
-    font-weight: 600;
-    padding: 1.6rem 3.2rem;
-    border-radius: 9px;
-    transition: all 0.3s;
-  }
+.btn, :link, :visited {
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+  transition: all 0.3s;
 }
+
+.btn {
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+
+  display: inline-block;
+}
+
 
 .btnFull {
   &:link, &:visited {

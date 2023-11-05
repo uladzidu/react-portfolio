@@ -44,9 +44,7 @@ export const ContactMe = () => {
                                        placeholder="Type the message"
                                        required/>
                             </div>
-                            {/*<button className="btn btn--form">Send</button>*/}
                             <button className={`${s.btn} ${s.btnForm}`}>Send</button>
-
                         </form>
                     </div>
                     <div className={s.ctaImgBox}
